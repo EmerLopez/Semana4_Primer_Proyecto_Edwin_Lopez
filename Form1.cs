@@ -16,5 +16,10 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
