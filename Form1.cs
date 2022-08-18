@@ -35,7 +35,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 {
                     int randomNumber = random.Next(icons.Count);
                     iconLabel.Text = icons[randomNumber];
-                    // iconLabel.ForeColor = iconLabel.BackColor;
+                    iconLabel.ForeColor = iconLabel.BackColor;
                     icons.RemoveAt(randomNumber);
                 }
             }
@@ -43,6 +43,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
         public Form1()
         {
             InitializeComponent();
+            AssignIconsToSquares();
         }
 
         
