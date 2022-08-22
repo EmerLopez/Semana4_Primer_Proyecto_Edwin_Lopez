@@ -14,9 +14,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
     {
         Random random = new Random();
 
-        // Each of these letters is an interesting icon
-        // in the Webdings font,
-        // and each icon appears twice in this list
+       
         List<string> icons = new List<string>()
     {
         "!", "!", "N", "N", ",", ",", "k", "k",
@@ -24,15 +22,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
     };
         Label firstClicked = null;
 
-        // secondClicked points to the second Label control 
-        // that the player clicks
+       
         Label secondClicked = null;
         private void AssignIconsToSquares()
         {
-            // The TableLayoutPanel has 16 labels,
-            // and the icon list has 16 icons,
-            // so an icon is pulled at random from the list
-            // and added to each label
+           
             foreach (Control control in tableLayoutPanel1.Controls)
             {
                 Label iconLabel = control as Label;
@@ -60,16 +54,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -77,10 +66,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
@@ -91,10 +77,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+               
                 timer1.Start();
             }
         }
@@ -108,16 +91,10 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -125,10 +102,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
@@ -140,10 +114,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+               
                 timer1.Start();
             }
         }
@@ -157,16 +128,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -174,10 +140,6 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
@@ -190,10 +152,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -206,16 +165,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -223,10 +177,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
@@ -239,10 +190,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -256,16 +204,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -273,19 +216,13 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 if (firstClicked.Text == secondClicked.Text)
                 {
                     firstClicked = null;
@@ -306,16 +243,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -323,19 +255,13 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+               
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
                 CheckForWinner();
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
 
                 if (firstClicked.Text == secondClicked.Text)
                 {
@@ -356,16 +282,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -373,17 +294,10 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
                 CheckForWinner();
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
 
                 if (firstClicked.Text == secondClicked.Text)
                 {
@@ -410,16 +324,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -427,10 +336,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+               
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -444,10 +350,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -465,16 +368,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -482,10 +380,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+               
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -499,10 +394,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -516,16 +408,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -533,10 +420,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -550,10 +434,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+               
                 timer1.Start();
             }
         }
@@ -567,16 +448,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -584,10 +460,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+               
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -601,10 +474,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -618,16 +488,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -635,10 +500,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -652,10 +514,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+               
                 timer1.Start();
             }
         }
@@ -669,16 +528,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -686,10 +540,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -703,10 +554,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+               
                 timer1.Start();
             }
         }
@@ -719,16 +567,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -736,10 +579,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+               
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -753,10 +593,6 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
                 timer1.Start();
             }
         }
@@ -769,16 +605,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+               
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -786,10 +617,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -802,10 +630,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -818,16 +643,11 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
 
             if (clickedLabel != null)
             {
-                // If the clicked label is black, the player clicked
-                // an icon that's already been revealed --
-                // ignore the click
+                
                 if (clickedLabel.ForeColor == Color.Black)
                     return;
 
-                // If firstClicked is null, this is the first icon
-                // in the pair that the player clicked, 
-                // so set firstClicked to the label that the player 
-                // clicked, change its color to black, and return
+                
                 if (firstClicked == null)
                 {
                     firstClicked = clickedLabel;
@@ -835,10 +655,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                     return;
                 }
 
-                // If the player gets this far, the timer isn't
-                // running and firstClicked isn't null,
-                // so this must be the second icon the player clicked
-                // Set its color to black
+                
                 secondClicked = clickedLabel;
                 secondClicked.ForeColor = Color.Black;
 
@@ -852,10 +669,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
 
 
-                // If the player gets this far, the player 
-                // clicked two different icons, so start the 
-                // timer (which will wait three quarters of 
-                // a second, and then hide the icons)
+                
                 timer1.Start();
             }
         }
@@ -869,20 +683,17 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
         {
             timer1.Stop();
 
-            // Hide both icons
+           
             firstClicked.ForeColor = firstClicked.BackColor;
             secondClicked.ForeColor = secondClicked.BackColor;
 
-            // Reset firstClicked and secondClicked 
-            // so the next time a label is
-            // clicked, the program knows it's the first click
+            
             firstClicked = null;
             secondClicked = null;
         }
         private void CheckForWinner()
         {
-            // Go through all of the labels in the TableLayoutPanel, 
-            // checking each one to see if its icon is matched
+           
             foreach (Control control in tableLayoutPanel1.Controls)
             {
                 Label iconLabel = control as Label;
@@ -894,9 +705,7 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
                 }
             }
 
-            // If the loop didn’t return, it didn't find
-            // any unmatched icons
-            // That means the user won. Show a message and close the form
+            
             MessageBox.Show("You matched all the icons!", "Congratulations");
             Close();
         }
