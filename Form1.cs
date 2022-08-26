@@ -708,6 +708,9 @@ namespace Semana4_Primer_Proyecto_Edwin_Lopez
             
             MessageBox.Show("You matched all the icons!", "Congratulations");
             Close();
+
+            //Hola soi nuevo
+
         }
     }
 }
